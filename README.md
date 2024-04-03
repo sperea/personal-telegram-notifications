@@ -29,3 +29,39 @@ Feel free to contribute by forking this repository, making changes, and submitti
 '''
 * * * * * * python3 /path/to/radarr_notification.py > /dev/null 2>&1
 '''
+
+
+## IMDb Movie Folder Creator
+
+This Python script automates the process of organizing your movie files based on their IMDb ID. It creates a folder with the movie's title in Spanish and the production year in parentheses, then moves the provided video file into this folder, renaming it to match the folder's title.
+
+### Features
+
+Fetches movie title and production year in Spanish from IMDb using IMDb ID.
+
+Creates a folder named after the movie title and production year.
+
+Moves the video file into the created folder, renaming it accordingly.
+
+### Requirements
+
+- Python 3.x
+- IMDbPY library (imdbpy), version 2022.0.1
+
+## Usage
+
+- Install the required dependencies listed in requirements.txt:
+
+pip install -r requirements.txt
+
+- Run the script:
+
+'''
+python imdb_movie_folder_creator.py
+'''
+
+Follow the prompts to enter the IMDb ID of the movie and the path to the video file.
+
+### Example
+
+Suppose you have a video file named my_movie.mp4 and its IMDb ID is tt1234567. Running the script will create a folder named Movie Title (Year) and move my_movie.mp4 into it, renaming it to Movie Title (Year).mp4.
